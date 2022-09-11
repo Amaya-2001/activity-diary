@@ -1,10 +1,11 @@
 import { useState } from "react";
+import dropDown from "../dropDown.module.css";
 
 export const DropDown = (props) => {
   const [variables, setVariable] = useState(props.values)
   return (
     <div>
-      <select>
+      <select className={dropDown.dropDownList}>
         <option value=''>Choose Option</option>
       {variables.map((variable) =>{
         return (
