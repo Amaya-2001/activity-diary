@@ -1,5 +1,6 @@
 import { Button } from "./Button"
 import { DropDown } from "./DropDown"
+import FormStyles from "../form.module.css"
 
 export const Form = () => {
     let programmes = ["Software Engineering", "Computer Science", "Textile Engineering"]
@@ -7,7 +8,7 @@ export const Form = () => {
     let batch_number = ["01", "02", "03"]
 
     return (
-        <form> 
+        <form className={FormStyles.form}> 
              <DropDown values ={programmes}></DropDown>
              <DropDown values={batch_year}></DropDown>
              <DropDown values={batch_number}></DropDown>
