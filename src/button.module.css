@@ -1,4 +1,8 @@
 .submitBtn {
     padding: 2px;
     margin: 10px;
+    width:150px;
+    background: hsl(0, 0%, 85%);
+    border-radius: 8px;
+    padding: 10px;
 }
