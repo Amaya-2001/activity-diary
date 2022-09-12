@@ -12,8 +12,19 @@ export const Form = () => {
     const [year, setYear] = useState('')
     const [batchNo, setBatchNo] = useState('')
 
+    const handleForm =(event)=>{
+        event.preventDefault();
+        console.log(programme);
+        console.log(year);
+        console.log(batchNo);
+
+
+
+};
+
     return (
-        <form className={FormStyles.form}>
+  
+        <form className={FormStyles.form} onSubmit={handleForm}>
              <DropDown values={programmes} func={setProgramme}></DropDown>
              <DropDown values={batchYear} func={setYear}></DropDown>
              <DropDown values={batchNumber} func={setBatchNo}></DropDown>
