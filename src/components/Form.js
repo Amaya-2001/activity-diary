@@ -14,13 +14,7 @@ export const Form = () => {
 
     const handleForm =(event)=>{
         event.preventDefault();
-        console.log(programme);
-        console.log(year);
-        console.log(batchNo);
-
-
-
-};
+    };
 
     return (
   
