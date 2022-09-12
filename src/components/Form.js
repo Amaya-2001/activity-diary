@@ -9,7 +9,7 @@ export const Form = () => {
 
     return (
         <form className={FormStyles.form}> 
-             <DropDown values ={programmes}></DropDown>
+             <DropDown values={programmes}></DropDown>
              <DropDown values={batch_year}></DropDown>
              <DropDown values={batch_number}></DropDown>
 
