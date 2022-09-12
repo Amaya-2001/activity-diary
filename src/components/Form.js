@@ -1,6 +1,7 @@
 import { Button } from "./Button"
 import { DropDown } from "./DropDown"
 import FormStyles from "../form.module.css"
+import { useState } from "react"
 
 export const Form = () => {
     let programmes = ["Software Engineering", "Computer Science", "Textile Engineering"]
@@ -12,12 +13,16 @@ export const Form = () => {
     const [batchNo, setBatchNo] = useState('')
 
     return (
-        <form className={FormStyles.form}> 
-             <DropDown values={programmes}></DropDown>
-             <DropDown values={batchYear}></DropDown>
-             <DropDown values={batchNumber}></DropDown>
+        <form className={FormStyles.form}>
+             <DropDown values={programmes} func={setProgramme}></DropDown>
+             <DropDown values={batchYear} func={setYear}></DropDown>
+             <DropDown values={batchNumber} func={setBatchNo}></DropDown>
 
              <Button />
+
+             <h1>{programme}</h1>
+             <h1>{year}</h1>
+             <h1>{batchNo}</h1>
         </form>
     )
 
